@@ -16,7 +16,7 @@ object IO_Intro3 extends IOApp.Simple {
   val io1: IO[Int] = IO.pure(42)
   val io2: IO[String] = IO.pure("Scala")
 
-  // FIBERS:
+  // FIBERS - Simplified API:
   trait myFiber[F[_], A] {
     def join: F[A]          // Waits for this fiber's final result (wait to finish)
     def cancel: F[Unit]     // Cancels this fiber
@@ -24,8 +24,8 @@ object IO_Intro3 extends IOApp.Simple {
 
   // Running a single fiber on another thread
   def singleFiber(): IO[Unit] = for {
-    fiber <- io1.debug.start
-    _ <- fiber.join
+    fiber <- io1.debug.start          // Starting the thread
+    _ <- fiber.join                   // .join -> waits for thread to finish
   } yield ()
 
 

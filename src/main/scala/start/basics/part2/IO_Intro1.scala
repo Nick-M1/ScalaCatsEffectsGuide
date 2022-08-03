@@ -41,14 +41,14 @@ object IO_Intro1 {
     
 
 
-    // Read 2 lines from std input, then prints the lines
+    // Read 2 lines from std input, then prints the lines. These are both run sequentially on the main thread (no use of io.start / fiber.join or parMapN)
     def readTwice_1(): IO[Unit] = for {           // Using for-comp
       line1 <- IO(StdIn.readLine())
       line2 <- IO(StdIn.readLine())
       _ <- IO.delay(println(line1 + line2))
     } yield ()
 
-    def readTwice_2(): IO[Unit] = {               // Using mapN to combine IOs
+    def readTwice_2(): IO[Unit] = {               // Using mapN to combine IOs (higher-level function)
       (IO(StdIn.readLine()), IO(StdIn.readLine()))
         .mapN(_ + _)
         .map(println)

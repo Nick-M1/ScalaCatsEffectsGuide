@@ -25,7 +25,7 @@ object IO_Intro5 extends IOApp.Simple {
       IO("timeout: finished").debug.void
 
 
-  // Racing: start process1 & if it doesn't finish by the time timeout finishes then cancel process1
+  // Racing: start process1 & timeout processes. The process that finishes 1st will have its result returned && the loser fiber will be canceled
   def testRace(): IO[String] = {
     val firstIO: IO[Either[Int, Unit]] = IO.race(process1Wrap, timeout)       // type: IO[ Either[ process1Type, process2Type ]]    where process2 = timeout
 
