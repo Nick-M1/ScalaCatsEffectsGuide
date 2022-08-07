@@ -1,3 +1,5 @@
+![](src/main/Resources/impure-logo.png)
+
 # Scala Cats-Effects Guide
 Assumes that the user is very familiar with the Cats library (if not refer to the Cats Guide)
 
