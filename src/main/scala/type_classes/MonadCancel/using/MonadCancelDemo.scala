@@ -1,4 +1,4 @@
-package type_classes.MonadCancelDemo
+package type_classes.MonadCancel.using
 
 import cats.effect.MonadCancel
 import cats.effect.std.Semaphore
