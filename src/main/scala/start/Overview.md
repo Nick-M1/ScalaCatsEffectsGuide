@@ -5,6 +5,7 @@ Contains word docs going through:
   * An intro to Cats Effects & terminology
   * An intro the IO data-type (which is the most used data-type in Cats Effects and has an implementation of all the type-classes in Cats & Cats Effects)
   * An intro to each type-class in Cats Effects
+  * An excel sheet with each method of each type-class
 
 ### part1_CustomIO
 * We create our own simplified IO data-type (not from Cats) and use this in examples
