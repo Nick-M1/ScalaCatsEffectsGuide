@@ -1,18 +1,12 @@
-package start
+package start.basics.part4_Examples
 
 import cats.effect.{IO, IOApp}
 import scala.concurrent.duration.*
 
-/*  FIZBUZ
- *  Runs four concurrent lightweight threads, or fibers, one of which counts up an Int value once per second,
- *  while the others poll that value for changes and print in response
- */
-
-
-object ExampleProgramme extends IOApp.Simple {
+object Fizbuz extends IOApp.Simple {
   val run: IO[Unit] = for {
     ctr <- IO.ref(0)
-    
+
     poll = IO.sleep(1.second) *> ctr.get
 
     _ <- poll.flatMap(IO.println(_)).foreverM.start

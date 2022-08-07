@@ -1,4 +1,4 @@
-package start.basics.part4
+package start.basics.part4_Examples
 
 import cats.effect.kernel.Outcome.{Succeeded, Errored, Canceled}
 import cats.effect.{Fiber, IO, IOApp}
