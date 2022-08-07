@@ -1,10 +1,10 @@
-package start.basics.part2
+package start.basics.part2_IOBasics
 
 import cats.effect.{ExitCode, Fiber, FiberIO, IO, IOApp}
 import concurrent.duration._
 import utils_useful.extensions.*
 
-object IO_Intro5 extends IOApp.Simple {
+object IO_Intro5_RacingIOs extends IOApp.Simple {
 
   // Thread process #1:
   val process1: IO[Int] =

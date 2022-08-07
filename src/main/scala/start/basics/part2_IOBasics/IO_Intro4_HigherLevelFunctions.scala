@@ -1,4 +1,4 @@
-package start.basics.part2
+package start.basics.part2_IOBasics
 
 import cats.effect.kernel.Outcome.{Errored, Succeeded}
 import utils_useful.extensions.*
@@ -7,7 +7,7 @@ import cats.effect.unsafe.implicits.global
 import cats.syntax.parallel.*
 import cats.syntax.apply.*
 
-object IO_Intro2_HigherLevelFunctions extends IOApp.Simple {
+object IO_Intro4_HigherLevelFunctions extends IOApp.Simple {
 
   val io1: IO[Int] = IO(5)
   val io2: IO[Int] = IO(6)

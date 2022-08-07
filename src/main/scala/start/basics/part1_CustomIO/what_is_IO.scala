@@ -1,4 +1,4 @@
-package start.basics.part1
+package start.basics.part1_CustomIO
 
 object what_is_IO {
 
@@ -13,7 +13,7 @@ object what_is_IO {
    *  - Methods map & flatMap (myIO is a Monad)
    * */
 
-  case class MyIO[A](unsafeRun: () => A) {
+  case class MyIO[A](unsafeRun: () => A) {      // Note: For our user-defined MyIO, the syntax for unsafeRun is slightly different to Cat-Effect's IO
     def map[B](f: A => B): MyIO[B] =
       MyIO(() => f(unsafeRun()))
 

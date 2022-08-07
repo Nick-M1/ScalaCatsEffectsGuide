@@ -1,4 +1,4 @@
-package start.basics.part3
+package start.basics.part3_ManualFibers
 
 import cats.effect.IO.{IOCont, Uncancelable}
 import cats.effect.{IO, IOApp}

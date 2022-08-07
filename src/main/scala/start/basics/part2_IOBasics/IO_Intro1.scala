@@ -1,4 +1,4 @@
-package start.basics.part2
+package start.basics.part2_IOBasics
 
 import utils_useful.extensions.*
 import cats.effect.IO

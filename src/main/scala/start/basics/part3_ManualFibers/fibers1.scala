@@ -1,4 +1,4 @@
-package start.basics.part3
+package start.basics.part3_ManualFibers
 
 import cats.effect.{IO, IOApp, Fiber}
 import utils_useful.extensions.*

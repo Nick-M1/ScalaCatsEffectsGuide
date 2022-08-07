@@ -1,4 +1,4 @@
-package start.basics.part2
+package start.basics.part2_IOBasics
 
 import cats.effect.kernel.Outcome.{Canceled, Errored, Succeeded}
 import utils_useful.extensions.*
@@ -10,7 +10,7 @@ import cats.syntax.parallel.*
 import concurrent.duration.*
 
 
-object IO_Intro3 extends IOApp.Simple {
+object IO_Intro3_MultipleThreads extends IOApp.Simple {
 
   // IOs:
   val io1: IO[Int] = IO.pure(42)
