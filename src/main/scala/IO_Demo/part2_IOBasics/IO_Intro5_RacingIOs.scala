@@ -1,4 +1,4 @@
-package start.basics.part2_IOBasics
+package IO_Demo.part2_IOBasics
 
 import cats.effect.{ExitCode, Fiber, FiberIO, IO, IOApp}
 import concurrent.duration._

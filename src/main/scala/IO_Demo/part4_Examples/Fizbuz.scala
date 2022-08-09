@@ -1,4 +1,4 @@
-package start.basics.part4_Examples
+package IO_Demo.part4_Examples
 
 import cats.effect.{IO, IOApp}
 import scala.concurrent.duration.*

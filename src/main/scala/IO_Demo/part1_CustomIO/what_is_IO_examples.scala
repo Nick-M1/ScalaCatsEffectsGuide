@@ -1,7 +1,9 @@
-package start.basics.part1_CustomIO
+package IO_Demo.part1_CustomIO
+
+import IO_Demo.part1_CustomIO.what_is_IO.MyIO
 
 import scala.io.StdIn
-import start.basics.part1_CustomIO.what_is_IO.MyIO
+import what_is_IO.MyIO
 
 object what_is_IO_examples extends App {
 
